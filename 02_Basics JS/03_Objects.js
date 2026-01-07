@@ -1,38 +1,38 @@
-// singleton
-// Object.create
+// singleton 
+// Object.create this is another way to create objects in JS for singleton pattern
 
-// object literals
+// object literals is the most common way to create objects in JS
 
-const mySym = Symbol("key1")
+const mySym = Symbol("key1") // unique identifier: means no one can access this key except us
 
 
 const JsUser = {
-    name: "Hitesh",
-    "full name": "Hitesh Choudhary",
-    [mySym]: "mykey1",
-    age: 18,
-    location: "Jaipur",
-    email: "hitesh@google.com",
-    isLoggedIn: false,
-    lastLoginDays: ["Monday", "Saturday"]
+    name: "Hitesh", // key: value pairs and properties
+    "full name": "Hitesh Choudhary", // keys with spaces must be in quotes
+    [mySym]: "mykey1", // symbol as key
+    age: 18, // number
+    location: "Jaipur", // string
+    email: "hitesh@google.com", // string
+    isLoggedIn: false, // boolean
+    lastLoginDays: ["Monday", "Saturday"] // array 
 }
 
-// console.log(JsUser.email)
+// console.log(JsUser.email) 
 // console.log(JsUser["email"])
 // console.log(JsUser["full name"])
-// console.log(JsUser[mySym])
+// console.log(JsUser[mySym]) // these all are different ways to access object properties
 
-JsUser.email = "hitesh@chatgpt.com"
+JsUser.email = "hitesh@chatgpt.com" // updating object property
 // Object.freeze(JsUser)
-JsUser.email = "hitesh@microsoft.com"
+JsUser.email = "hitesh@microsoft.com"// will not update because of freeze
 // console.log(JsUser);
 
 JsUser.greeting = function(){
-    console.log("Hello JS user");
+    console.log("Hello JS user"); // method inside object and function expression
 }
 JsUser.greetingTwo = function(){
-    console.log(`Hello JS user, ${this.name}`);
+    console.log(`Hello JS user, ${this.name}`); // method with this keyword to access object properties
 }
 
-console.log(JsUser.greeting());
-console.log(JsUser.greetingTwo());
+console.log(JsUser.greeting());// calling methods inside object
+console.log(JsUser.greetingTwo());// calling methods inside object
