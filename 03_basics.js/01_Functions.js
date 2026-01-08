@@ -43,7 +43,7 @@ function calculateCartPrice(val1, val2, ...num1){
     return num1
 }
 
-// console.log(calculateCartPrice(200, 400, 500, 2000))
+// console.log(calculateCartPrice(200, 400, 500, 2000)) // this will return an array of all the rest parameters
 
 const user = {
     username: "hitesh",
@@ -52,19 +52,19 @@ const user = {
 
 function handleObject(anyobject){
     console.log(`Username is ${anyobject.username} and price is ${anyobject.price}`);
-}
+} // this is for accessing object properties inside function and using them
 
 // handleObject(user)
 handleObject({
     username: "sam",
     price: 399
-})
+}) // you can also pass object directly without storing it in a variable
 
 const myNewArray = [200, 400, 100, 600]
 
 function returnSecondValue(getArray){
     return getArray[1]
-}
+} // passing array to function and returning second value from that array
 
 // console.log(returnSecondValue(myNewArray));
-console.log(returnSecondValue([200, 400, 500, 1000]));
+console.log(returnSecondValue([200, 400, 500, 1000])); // you can also pass array directly without storing it in a variable
