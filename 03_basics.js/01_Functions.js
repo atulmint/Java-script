@@ -5,20 +5,21 @@ function sayMyName(){
     console.log("E");
     console.log("S");
     console.log("H");
-}
+} //this is function declaration
 
-// sayMyName()
+// sayMyName() //function invocation / function call
 
 // function addTwoNumbers(number1, number2){
 
 //     console.log(number1 + number2);
 // }
 
+
 function addTwoNumbers(number1, number2){
 
     // let result = number1 + number2
     // return result
-    return number1 + number2
+    return number1 + number2 // directly return the sum
 }
 
 const result = addTwoNumbers(3, 5)
@@ -32,7 +33,7 @@ function loginUserMessage(username = "sam"){
         return
     }
     return `${username} just logged in`
-}
+} // function with default parameter and concept of early return
 
 // console.log(loginUserMessage("hitesh"))
 // console.log(loginUserMessage("hitesh"))
