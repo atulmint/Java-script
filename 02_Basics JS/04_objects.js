@@ -67,20 +67,23 @@ const course = {
     coursename: "js in hindi",
     price: "999",
     courseInstructor: "hitesh"
-}
+} //this is written in object literal format
 
-// course.courseInstructor
+// course.courseInstructor // this is for accessing the value of key courseInstructor
 
 const {courseInstructor: instructor} = course
 
 // console.log(courseInstructor);
+
+//output is : hitesh
+
 console.log(instructor);
 
 // {
 //     "name": "hitesh",
 //     "coursename": "js in hindi",
 //     "price": "free"
-// }
+// } // this is wrriten in JSON format
 
 [
     {},
